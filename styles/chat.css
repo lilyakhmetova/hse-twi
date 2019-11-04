@@ -5,6 +5,7 @@
 body {
   font-family: 'Fira Code', monospace;
   background-color: #FDFFF5;
+  width: 1440px;
 }
 
 
@@ -16,7 +17,7 @@ body {
 nav {
   position: fixed;
   left: calc((100vw - 480px)/2);
-  transform: translateX(-100%);
+  transform: translateX(-160%);
   padding: 24px 32px 0px 0px;
   margin-top: 24px;
 }
@@ -105,7 +106,7 @@ nav a {
 main {
   width: 480px;
   min-height: 100vh;
-  margin: 0 auto;
+  margin-left: 352px;
   border-left: 1px solid rgba(0, 0, 0, 0.25);
   border-right: 1px solid rgba(0, 0, 0, 0.25);
   padding-bottom: 25vh;
@@ -174,3 +175,95 @@ article:hover {
 }
 
 /* CHAT */
+
+.chatbox {
+  position: absolute;
+  min-height: 100vh;
+  width: 480px;
+  right: calc((100vw - 480px)/2);
+  top: 0;
+  left: 834px;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  padding-bottom: 25vh;
+}
+
+.chatbox__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 16px 16px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.chatbox__header h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.chatbox__header span {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.chatbox p {
+  width: 317px;
+  font-size: 16px;
+  background: #0038FF;
+  padding: 16px;
+  border-radius: 24px 24px 0px 24px;
+  color: #FFFFFF;
+  line-height: 24px;
+  margin-left: 118px;
+  margin-top: 80px;
+}
+
+.message {
+}
+
+.message p {
+  width: 317px;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  border-radius: 24px 24px 24px 0px;
+  color: #000000;
+  line-height: 24px;
+  margin-left: 58px;
+  margin-top: 20px;
+}
+
+.message img {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 468px;
+  margin-left: 16px;
+}
+
+.chatbox span.data {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 345px;
+}
+
+.message span {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 57px;
+}
+
+.typemessage {
+  margin-top: 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+}
+
+.typemessage h2 {
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  padding: 16px;
+}
+
+.typemessage img {
+  margin-right: 18px;
+}
