@@ -1,0 +1,176 @@
+@import "reset.css";
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:400,700&display=swap&subset=cyrillic');
+
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: #FDFFF5;
+}
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+  position: fixed;
+  left: calc((100vw - 480px)/2);
+  transform: translateX(-100%);
+  padding: 24px 32px 0px 0px;
+  margin-top: 24px;
+}
+
+nav ul li {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 17px 5px 17px 5px;
+
+}
+
+.nav__icon {
+  width: 28px;
+  height: 28px;
+  background-color: #000;
+  margin-right: 15px;
+}
+
+.nav__icon--home {
+  mask: url(../img/home-icn.svg);
+  -webkit-mask: url(../img/home-icn.svg);
+}
+
+.nav__icon--bell {
+  mask: url(../img/bell-icn.svg);
+  -webkit-mask: url(../img/bell-icn.svg);
+}
+
+.nav__icon--chat {
+  mask: url(../img/chat-icn.svg);
+  -webkit-mask: url(../img/chat-icn.svg);
+}
+
+.nav__icon--bookmark {
+  mask: url(../img/bookmark-icn.svg);
+  -webkit-mask: url(../img/bookmark-icn.svg);
+}
+
+
+nav ul li:hover {
+  cursor: pointer;
+  color: #0038FF;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+}
+
+nav ul li:hover .nav__icon--home {
+  cursor: pointer;
+  background: #0038FF;
+}
+
+nav ul li:hover .nav__icon--bell {
+  cursor: pointer;
+  background: #0038FF;
+}
+
+
+nav ul li:hover .nav__icon--chat {
+  cursor: pointer;
+  background: #0038FF;
+}
+
+
+nav ul li:hover .nav__icon--bookmark {
+  cursor: pointer;
+  background: #0038FF;
+}
+
+nav a {
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 16px 55px 16px 55px;
+  background-color: #0038FF;
+  color: #FFFFFF;
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  top: 50px;
+}
+
+/* MAIN */
+
+main {
+  width: 480px;
+  min-height: 100vh;
+  margin: 0 auto;
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  padding-bottom: 25vh;
+}
+
+.main__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.main__header h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.story {
+  padding: 24px 32px 16px 24px;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.story__user-ava {
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+}
+
+.story__body__header {
+  display: flex;
+  align-items: center;
+
+}
+
+.story__body__header * {
+  margin-right: 16px;
+}
+
+
+.story__body__header h3 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.story__body__header a,
+.story__body__header span {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.story__body__header a {
+  text-decoration: none;
+}
+
+.story__body p {
+  font-size: 14px;
+  line-height: 24px;
+  padding-top: 8px;
+}
+
+article:hover {
+  background: #F2F3ED;
+  cursor: pointer;
+  border-right: 3px solid #0038FF;
+}
+
+/* CHAT */
