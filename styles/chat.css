@@ -6,6 +6,7 @@ body {
   font-family: 'Fira Code', monospace;
   background-color: #FDFFF5;
   width: 1440px;
+  box-sizing: border-box;
 }
 
 

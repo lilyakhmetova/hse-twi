@@ -28,7 +28,6 @@ nav ul li {
   display: flex;
   align-items: center;
   padding: 17px 5px 17px 5px;
-
 }
 
 .nav__icon {
@@ -88,7 +87,7 @@ nav ul li:hover .nav__icon--bookmark {
   background: #0038FF;
 }
 
-nav a {
+.nav__btn__text {
   font-weight: bold;
   font-size: 16px;
   text-decoration: none;
@@ -248,4 +247,69 @@ main {
   font-size: 14px;
   color: #0038FF;
   text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+
+  nav {
+    padding: 16px 16px 0px 0px;
+    transform: translateX(-330%);
+  }
+
+  nav ul li {
+    padding: 16px 0;
+  }
+
+  .nav__menu__text {
+    display: none;
+  }
+
+  nav a {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #0038FF;
+  }
+
+  .nav__btn__text {
+    display: none;
+  }
+
+  .nav__btn__icn {
+    background-image: url(../img/new-tweet.svg);
+    width: 20px;
+    height: 20px;
+  }
+
+  .friends {
+    top: 22px;
+    transform: translateX(60%);
+  }
+
+  main {
+    transform: translateX(-25%);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  nav {
+    padding: 0px 16px 0px 0px;
+    transform: translateX(-40%);
+  }
+
+  .friends {
+    display: none;
+  }
+
+  main {
+    transform: translateX(5%);
+  }
+
 }
